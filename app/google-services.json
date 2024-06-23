@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "683599843019",
+    "firebase_url": "https://whatflower2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "whatflower2",
+    "storage_bucket": "whatflower2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683599843019:android:43ac68278628ebc896954e",
+        "android_client_info": {
+          "package_name": "com.example.whatflower"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJZJXuhEe18sT1KGhEaDsTLYEdsSPgvPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

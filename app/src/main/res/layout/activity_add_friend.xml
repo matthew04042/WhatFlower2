@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chats.AddFriendActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search for friends"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:background="#F0F2F5">
+        <EditText
+            android:id="@+id/et_search"
+            android:background="@drawable/edit_chat_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:paddingStart="8dp"
+            android:hint="Serach for friends by account number"
+            android:paddingEnd="8dp"
+            android:textCursorDrawable="@null"/>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="8dp">
+        <com.example.whatflower.ui.view.CharAvatarView
+            android:id="@+id/ca_add_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:textSize="20sp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_add_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_add_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last message"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

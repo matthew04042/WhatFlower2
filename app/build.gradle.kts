@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -14,6 +15,17 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude("META-INF/DEPENDENCIES")
+        exclude("META-INF/LICENSE")
+        exclude("META-INF/LICENSE.txt")
+        exclude("META-INF/license.txt")
+        exclude("META-INF/NOTICE")
+        exclude("META-INF/NOTICE.txt")
+        exclude("META-INF/notice.txt")
+        exclude("META-INF/ASL2.0")
+        exclude("META-INF/*.kotlin_module")
     }
 
     buildTypes {
@@ -45,9 +57,16 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.tensorflow.lite.support)
     implementation(libs.tensorflow.lite.metadata)
+    implementation(libs.firebase.database)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.google.android.material:material:1.2.0’")
-    implementation("org.tensorflow:tensorflow-lite:2.9.0")
+    implementation(libs.volley)
+    implementation ("org.tensorflow:tensorflow-lite:+")
+    implementation ("org.tensorflow:tensorflow-lite-gpu:+")
+    implementation ("org.tensorflow:tensorflow-lite-support:+")
+    implementation("org.tensorflow:tensorflow-lite-support:0.1.0-rc1")
+    implementation("org.apache.httpcomponents:httpclient:4.5.13")
 }

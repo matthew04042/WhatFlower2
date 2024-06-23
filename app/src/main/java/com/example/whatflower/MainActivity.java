@@ -1,21 +1,19 @@
 package com.example.whatflower;
 
 import android.annotation.SuppressLint;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
-import android.view.MenuItem;
-import androidx.annotation.NonNull;
-import com.example.whatflower.*;
+
 import com.example.whatflower.databinding.ActivityMainBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import java.io.*;
-import androidx.activity.EdgeToEdge;
+import com.example.whatflower.ui.HomeFragment;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import android.Manifest;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -26,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
+        getPermission();
         binding.bottomNavigationView.setOnItemSelectedListener(item ->{
         replaceFragment(new HomeFragment());
             switch ((item.getItemId())){
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     break;
                 case  R.id.myFlower:
-                    replaceFragment(new MyPlantFragment());
+    replaceFragment(new MyPlantFragment());
                     break;
                 case R.id.Profile:
                     replaceFragment(new Profile_Fragment());
@@ -48,5 +47,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.flFragment, fragment);
         fragmentTransaction.commit();
+    }
+
+    void getPermission(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+            if(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, 1);
+            }
+        }
     }
 }
