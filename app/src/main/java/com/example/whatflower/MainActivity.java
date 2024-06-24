@@ -1,59 +1,55 @@
 package com.example.whatflower;
 
-import android.annotation.SuppressLint;
+import android.Manifest;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
-
-import com.example.whatflower.databinding.ActivityMainBinding;
-import com.example.whatflower.ui.HomeFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import android.Manifest;
+import androidx.core.content.ContextCompat;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
-    @SuppressLint("NonConstantResourceId")
+
+    private static int LOCATION_PERMISSION_REQUEST_CODE = 7801;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
-        getPermission();
-        binding.bottomNavigationView.setOnItemSelectedListener(item ->{
-        replaceFragment(new HomeFragment());
-            switch ((item.getItemId())){
-                case  R.id.home:
-                    replaceFragment(new HomeFragment());
-                    break;
-                case  R.id.myFlower:
-    replaceFragment(new MyPlantFragment());
-                    break;
-                case R.id.Profile:
-                    replaceFragment(new Profile_Fragment());
-                    break;
-            }
+        setContentView(R.layout.activity_main);
+        FirebaseApp.initializeApp(this);
 
-            return true;
-        });
-    }
-    private void replaceFragment(Fragment fragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.flFragment, fragment);
-        fragmentTransaction.commit();
-    }
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-    void getPermission(){
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-            if(checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
-                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, 1);
-            }
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+
+        NavController navController = navHostFragment.getNavController();
+
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+
+        String[] strings = {
+                Manifest.permission.CAMERA,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.ACCESS_FINE_LOCATION
+        };
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    this,
+                    strings,
+                    LOCATION_PERMISSION_REQUEST_CODE
+            );
         }
+
+
     }
 }

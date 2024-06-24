@@ -9,7 +9,7 @@ public class AppData {
     private Boolean isLogin = false;
 
     private AppData() {}
-    
+
     public static synchronized AppData getInstance() {
         if (instance == null){
             instance = new AppData();

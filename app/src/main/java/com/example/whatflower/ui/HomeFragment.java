@@ -1,188 +1,303 @@
 package com.example.whatflower.ui;
 
-import static android.app.Activity.RESULT_OK;
-
-import android.annotation.SuppressLint;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
-import com.example.whatflower.MainActivity;
+import com.bumptech.glide.Glide;
 import com.example.whatflower.R;
-import com.example.whatflower.ml.Model;
+import com.example.whatflower.config.AppData;
+import com.example.whatflower.config.DatabaseConfig;
+import com.example.whatflower.config.ToastUtils;
+import com.example.whatflower.ui.picture.PictureBean;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.support.image.TensorImage;
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
-
-import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.text.DecimalFormat;
-import java.util.Objects;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+/**
+ * A simple {@link Fragment} subclass.
+ * create an instance of this fragment.
+ */
 public class HomeFragment extends Fragment {
-    Button uploadBtn, captureBtn;
-    ImageView imageView;
-    TextView predictionTextView;
-    String [] labels = new String[1001];
-    Bitmap bitmap;
 
-    public HomeFragment(){
-        // require a empty public constructor
+    private DatabaseReference mDatabase;
+    private AppData appData;
+    private static final int REQUEST_IMAGE_CAPTURE = 1;
+    private static final int REQUEST_IMAGE_PICK = 2;
+    private ImageView imageView;
+    private Uri photoUri;
+
+
+    public HomeFragment() {
+        // Required empty public constructor
+    }
+
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the  layout for this fragment
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
     @Override
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        uploadBtn = view.findViewById(R.id.uploadButton);
-        captureBtn = view.findViewById(R.id.captureButton);
-        imageView = view.findViewById(R.id.imageView);
-        predictionTextView = view.findViewById(R.id.predictionTextView);
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(requireActivity().getAssets().open("labels.txt")));
-            String line = bufferedReader.readLine();
-            int cnt = 0;
-            while (line != null) {
-                labels[cnt] = line;
-                cnt++;
-                line = bufferedReader.readLine();
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        uploadBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-            intent.setType("image/*");
-            startActivityForResult(intent, 10);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference(DatabaseConfig.ADD_FRIENDS);
+        appData = AppData.getInstance();
+
+        view.findViewById(R.id.iv_home_camera).setOnClickListener( v -> {
+            openCamera(REQUEST_IMAGE_CAPTURE);
         });
-        captureBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            startActivityForResult(intent, 12);
+        view.findViewById(R.id.iv_home_gallery).setOnClickListener( v -> {
+            openGallery();
         });
     }
-    @SuppressLint("SetTextI18n")
-    private void predict(Bitmap bitmap){
-        try {
-            MainActivity main  = (MainActivity) getActivity();
-            Intent intent1 = main.getIntent();
-            String username = intent1.getStringExtra("username");
-            String email = intent1.getStringExtra("email");
-            String name = intent1.getStringExtra("name");
-            System.out.println(username);
-            Model model = Model.newInstance(HomeFragment.this.requireContext());
-            // Creates inputs for reference.
-            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.UINT8);
-            bitmap = Bitmap.createScaledBitmap(bitmap, 224,224,true);
-            inputFeature0.loadBuffer(TensorImage.fromBitmap(bitmap).getBuffer());
 
-
-            // Runs model inference and gets result.
-            Model.Outputs outputs = model.process(inputFeature0);
-            TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
-            float[] arr = outputFeature0.getFloatArray();
-            DecimalFormat df = new DecimalFormat("0.000000");
-            for (int i = 0; i<arr.length ; i++){
-                System.out.println(labels[i]);
-                System.out.println(df.format(arr[i]));
+    private void openCamera() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(requireActivity().getPackageManager()) != null) {
+            File photoFile = null;
+            try {
+                photoFile = createImageFile();
+            } catch (IOException ex) {
+                // Error occurred while creating the File
             }
-            String result = labels[getMax(outputFeature0.getFloatArray())].replaceAll("\\d", "");
-            new Thread(() -> {
-                StringBuilder result1 = new StringBuilder();
-                try {
-                    URL url = new URL("https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts|pageimages&exintro=''&explaintext=''&indexpageids=''&redirects=1&pithumbsize=500&titles=" + result.replaceAll(" ", "%20"));
-                    URLConnection connection = url.openConnection();
-                    BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                    String inputLine;
-                    while ((inputLine = in.readLine()) != null) {
-                        JSONObject jsonObject = new JSONObject(inputLine);
-                        System.out.println(jsonObject);
-                        String pageId = jsonObject.getJSONObject("query").getJSONArray("pageids").getString(0);
-                        System.out.println(pageId);
-                        String extract = jsonObject.getJSONObject("query").getJSONObject("pages").getJSONObject(pageId).getString("extract");
-                        System.out.println(extract);
-                        result1.append(extract).append("\n");
-                        System.out.println(result1);
-                    }
-                    if (username != null) {
-                        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("my_flowers");
-                        JSONObject jsonObject = new JSONObject();
-                        JSONArray array = new JSONArray();
-                        JSONObject flower = new JSONObject();
-                        flower.put("flowerName", result);
-                        flower.put("flowerDescription", result1.toString());
-                        array.put(flower);
-                        jsonObject.put("name", name);
-                        jsonObject.put("email", email);
-                        jsonObject.put("username", username);
-                        jsonObject.put("flowers", array);
-                        reference.child(username).setValue(jsonObject.toString());
-                    }
-                    in.close();
-                } catch (IOException | JSONException e) {
-                    e.printStackTrace();
+            if (photoFile != null) {
+//                photoUri = FileProvider.getUriForFile(requireContext(),
+//                        "com.ak.plant.fileprovider",
+//                        photoFile);
+                photoUri = FileProvider.getUriForFile(requireContext(),
+                        "com.ak.plant.provider",
+                        photoFile);
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+            }
+        }
+    }
+
+
+    String imgPath = "";
+    private void openCamera(int type) {
+        File imgDir = new File(getFilePath(null, getActivity()));
+        String photoName = System.currentTimeMillis() + ".png";
+        File picture = new File(imgDir, photoName);
+        if (!picture.exists()) {
+            try {
+                picture.createNewFile();
+            } catch (IOException e) {
+                Log.e("TAG", "choosePictureTypeDialog: Failed on created File", e);
+            }
+        }
+        imgPath = picture.getAbsolutePath();
+        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        camera.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(getActivity(), "com.example.whatflower.provider", picture));
+        startActivityForResult(camera, type);
+    }
+
+
+    public String getFilePath(String dir, Context context) {
+        String path;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            path = context.getExternalFilesDir(dir).getAbsolutePath();
+        } else {
+            path = context.getFilesDir() + File.separator + dir;
+        }
+        File file = new File(path);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+        return path;
+    }
+
+
+
+    private void openGallery() {
+        Intent pickPhotoIntent = new Intent(Intent.ACTION_PICK,
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(pickPhotoIntent, REQUEST_IMAGE_PICK);
+    }
+    private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = requireActivity().getExternalFilesDir(null);
+        return File.createTempFile(
+                imageFileName,
+                ".jpg",
+                storageDir
+        );
+    }
+
+    private void showResultDialog(Uri selectedImage){
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_home_result, null);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setView(dialogView);
+
+        ImageView resultImage = dialogView.findViewById(R.id.dialog_home_image);
+        Button dialogButton = dialogView.findViewById(R.id.dialog_button_ok);
+        Button dialogButtonCancel = dialogView.findViewById(R.id.dialog_button_cancel);
+
+        if (selectedImage != null){
+            resultImage.setImageURI(selectedImage);
+        }else {
+            Glide.with(getActivity())
+                    .load(imgPath)
+                    .placeholder(R.drawable.ic_bg2)
+                    .error(R.drawable.ic_bg2)
+                    .into(resultImage);
+        }
+
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (appData.getLogin()){
+                    uploadImage(selectedImage);
                 }
-                requireActivity().runOnUiThread(() -> predictionTextView.setText(labels[getMax(outputFeature0.getFloatArray())].replaceAll("\\d", "")+ "\n \n"+result1.toString()));
-            }).start();
-//            predictionTextView.setText(result);
+                alertDialog.dismiss();
+            }
+        });
+        dialogButtonCancel.setOnClickListener( v -> {
+            alertDialog.dismiss();
+        });
+    }
 
-            // Releases model resources if no longer used.
-            model.close();
-        } catch (IOException e) {
-            // TODO Handle the exception
-            System.out.println(e);
-        }
-    }
-    int getMax(float[] arr){
-        int max=0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]>arr[max]) max=i;
-        }
-        return max;
-    }
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 10 && resultCode == RESULT_OK) {
-            Uri uri = Objects.requireNonNull(data).getData();
-            try {
-                bitmap = MediaStore.Images.Media.getBitmap(requireActivity().getContentResolver(), uri);
-                imageView.setImageBitmap(bitmap);
-                predict(bitmap);
-            } catch (IOException e) {
-                e.printStackTrace();
+        if (resultCode == getActivity().RESULT_OK) {
+            if (requestCode == REQUEST_IMAGE_CAPTURE) {
+                Log.i("TAG", "imgPath REQUEST_IMAGE_CAPTURE");
+                Log.i("TAG imgPath", "imgPath REQUEST_IMAGE_CAPTURE"+ imgPath);
+                Log.i("TAG photoUri", "imgPath REQUEST_IMAGE_CAPTURE"+ photoUri);
+
+                showResultDialog(photoUri);
+            } else if (requestCode == REQUEST_IMAGE_PICK && data != null) {
+                Log.i("TAG", "imgPath REQUEST_IMAGE_PICK");
+                Uri selectedImage = data.getData();
+                showResultDialog(selectedImage);
             }
         }
-        if (requestCode == 12 && resultCode == RESULT_OK) {
-            bitmap = (Bitmap) Objects.requireNonNull(data.getExtras()).get("data");
-            imageView.setImageBitmap(bitmap);
-            predict(bitmap);
+    }
+
+
+
+    public void uploadImage(Uri fileUri) {
+        String imagePath = getPathFromUri(fileUri, getActivity());
+        Uri file = Uri.fromFile(new File(imagePath));
+
+
+
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference();
+        StorageReference imagesRef = storageRef.child("images/" + file.getLastPathSegment());
+        UploadTask uploadTask = imagesRef.putFile(file);
+
+        uploadTask.addOnFailureListener(exception -> {
+            Log.e("Upload", "Upload failed", exception);
+            Toast.makeText(getActivity(), "Upload failed", Toast.LENGTH_SHORT).show();
+        }).addOnSuccessListener(taskSnapshot -> {
+            imagesRef.getDownloadUrl().addOnSuccessListener(uri -> {
+                String downloadUrl = uri.toString();
+                saveImageUrlToDatabase(downloadUrl);
+                Toast.makeText(getActivity(), "Upload successful", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(exception -> {
+                Log.e("Upload", "Failed to get download URL", exception);
+                Toast.makeText(getActivity(), "Failed to get download URL", Toast.LENGTH_SHORT).show();
+            });
+        });
+    }
+
+    public void saveImageUrlToDatabase(String downloadUrl) {
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("images").push();
+        myRef.setValue(downloadUrl).addOnSuccessListener(aVoid -> {
+            Toast.makeText(getActivity(), "URL saved to database", Toast.LENGTH_SHORT).show();
+        }).addOnFailureListener(e -> {
+            Log.e("Database", "Failed to save URL", e);
+            Toast.makeText(getActivity(), "Failed to save URL", Toast.LENGTH_SHORT).show();
+        });
+    }
+
+
+    private String getPathFromUri(Uri uri, Context context){
+        String[] projection = {MediaStore.Images.Media.DATA};
+        Cursor cursor = context.getContentResolver().query(uri, projection, null, null, null);
+
+        if (cursor != null) {
+            int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+            cursor.moveToFirst();
+            return cursor.getString(column_index);
         }
+        return null;
+    }
+
+
+
+    private String getFileExtension(Uri uri, Context context) {
+        ContentResolver contentResolver = context.getContentResolver();
+        MimeTypeMap mime = MimeTypeMap.getSingleton();
+        String type = contentResolver.getType(uri);
+        if (type == null) {
+            String path = uri.getPath();
+            if (path != null) {
+                type = mime.getMimeTypeFromExtension(MimeTypeMap.getFileExtensionFromUrl(path));
+            }
+        }
+        return mime.getExtensionFromMimeType(type);
+    }
+
+    private void saveData(String imgUrl, String result, String similarity, String wjImg){
+        PictureBean pictureBean = new PictureBean(imgUrl,result,similarity,wjImg);
+        DatabaseReference conversationsRef = FirebaseDatabase.getInstance().getReference("pictures").child(appData.getUserBean().getAccount());
+        conversationsRef.push().setValue(pictureBean)
+                .addOnSuccessListener(aVoid -> Log.d("ChatHelper", "Message successfully sent!"))
+                .addOnFailureListener(e -> Log.w("ChatHelper", "Error sending message", e));
+
+        ToastUtils.showToast(getActivity(),"识别成功");
     }
 
 }
