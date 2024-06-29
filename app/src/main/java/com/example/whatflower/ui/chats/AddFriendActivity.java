@@ -15,6 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.example.whatflower.R;
 import com.example.whatflower.bean.UserBean;
 import com.example.whatflower.config.AppData;
@@ -26,10 +29,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 public class AddFriendActivity extends AppCompatActivity {
 
@@ -142,16 +141,13 @@ public class AddFriendActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 boolean isApply = false;
                 Object o = snapshot.getValue();
-                JsonArray jsonArray = new JsonArray();
-                if (o != null){
-                    Gson gson = new Gson();
-                    String jsonString = gson.toJson(o);
-                    JsonElement jsonElement = JsonParser.parseString(jsonString);
-                    jsonArray = jsonElement.getAsJsonArray();
+                JSONArray jsonArray = JSON.parseArray(JSON.toJSONString(o));
+                if (jsonArray != null){
                     Log.i("sendAddFriendApply", jsonArray.toString());
-                    for (int i= 0; i < jsonArray.size(); i++){
-                        JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
-                        if (friend.equals(jsonObject.get("friendName").getAsString())){
+                    for (Object o1 : jsonArray){
+//                        JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
+                        JSONObject jsonObject = JSONObject.parseObject(o1.toString());
+                        if (friend.equals(jsonObject.getString("friendName"))){
                             isApply = true;
                         }
                     }
@@ -164,13 +160,14 @@ public class AddFriendActivity extends AppCompatActivity {
                 if (isApply){
                     Toast.makeText(getApplicationContext(), "Friends already requested", Toast.LENGTH_SHORT).show();
                 }else {
-                    JsonObject jsonObject1 = new JsonObject();
-                    jsonObject1.addProperty("friendName", tvUserName.getText().toString());
-                    jsonObject1.addProperty("friendAccount", friend);
-                    jsonObject1.addProperty("inputText", inputText);
-                    jsonObject1.addProperty("status", 0);
-                    jsonArray.add(jsonObject1);
-                    mFriendDatabase.child(user).setValue(jsonArray.asList());
+                    JSONObject jsonObject1 = new JSONObject();
+                    jsonObject1.put("friendName", tvUserName.getText().toString());
+                    jsonObject1.put("friendAccount", friend);
+                    jsonObject1.put("inputText", inputText);
+                    jsonObject1.put("status", "0");
+                    JSONArray jsonArray1 = new JSONArray();
+                    jsonArray1.add(jsonObject1);
+                    mFriendDatabase.child(user).setValue(jsonArray1);
                     Toast.makeText(getApplicationContext(), " Request sent", Toast.LENGTH_SHORT).show();
                 }
             }
