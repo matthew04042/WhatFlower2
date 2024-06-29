@@ -1,0 +1,781 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:49:9-57:20
+	android:grantUriPermissions
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:53:13-47
+	android:authorities
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:51:13-60
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:52:13-37
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:50:13-62
+manifest
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:2:1-60:12
+MERGED from [androidx.databinding:viewbinding:8.3.2] /Users/matthew.cheung/.gradle/caches/transforms-3/ae66f977320593e008fb92ca920be811/transformed/viewbinding-8.3.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/8ed837592f0bd454a17de29985b85f2c/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/e91d011ec028bc62165b2777d17297c1/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/335af6e7b6c91759c15310b5a79bed4e/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/8c3ccea1288715a40b2f501ca805c0d5/transformed/navigation-ui-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/dfdf54c554ba1095810b68ee6367d39e/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/matthew.cheung/.gradle/caches/transforms-3/dd2f12abdfaf76290062ae918da4e7cf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6c39fa3e4e1b020097118f667f6ba9f3/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d7b86e497e67a593e29373aad0b1ec9c/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:17:1-75:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a573c805a7d6b8b9beb1eae67592aed2/transformed/glide-4.12.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc2c44617c906c0c045e8990f2f0ecfa/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6aab38b12ad7d3f26de3513577144a8d/transformed/firebase-appcheck-interop-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/matthew.cheung/.gradle/caches/transforms-3/bd42bbb38bfc07cc8686b65d7602958e/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/a8f5e19cd012cf531af2574183f88890/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/matthew.cheung/.gradle/caches/transforms-3/6550c6cf2e30d63a3f7106cd19999fcf/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/37fdf126a13e5407cd1e6d9ddf4e964f/transformed/play-services-fido-20.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/matthew.cheung/.gradle/caches/transforms-3/52f93041456147d5e6e2e095d6de0eb3/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cbfa6dcb6fd27ab5b7eab0e2a47b7dde/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/8205fed4b1829a18f4e58b9b6c5c34fa/transformed/integrity-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/32ea303a5b35d23c914751a891a74e6d/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/matthew.cheung/.gradle/caches/transforms-3/4428a528086fa865aff0c852f6483c0e/transformed/activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/5f93f3b4f4945f8407a3ffe0ec310d15/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/1d5e2e571032fd24afb24ea3d5ad6500/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc55965311ccc157e887281d9709d2d7/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/bcf4054464675116e9cb604c206fc832/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1b54cd679b72a671d43b83446c406b92/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/99e1f9af46c976ab62e01418acaebae8/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/bd9a2f4df600532265bee19386f7deb6/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/2c0adcd9dfbe5ff8d84633b02abb9853/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/219f77e4a6596c55c89499e3f0995ab2/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1208c897e17bebefacd2598b9155495f/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/22b6c91186947f2d3579a6b00a7acf4b/transformed/lifecycle-livedata-core-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/d73dc6a09a2c25ea15f9a07b6e8462e5/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/f2c7660dfd07eff00bbcfbe00066ce04/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/a8d0a7f1f88ce611a826b1ac3cf4b9f7/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/77fd84045c4bc89d113a49b8a55448b3/transformed/core-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc189846f8eaa10d1a2ad0ac9c62d178/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d451a0475c7e6f9394354c48af74e848/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/98c3a6cde131eded16f7ad51a3d71482/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/272bd09b4ef0b98782c882ce44219c40/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/fec45dcd17b954b13d35cd445a6f1aa0/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/87d1db8e654d462596a09a0dc9ff4a98/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/345695125ddeb6a1c420a25d4c3fd9ab/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7189234d96c196e917ec10e2fbc4c2a5/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/7af139d4a8443cc0ff824bce7b13d7d9/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/a7e7697ca03634e5c1fef37cdd2da0c6/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ae0834493d8547176115ad961b52ba67/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/104c7a80290f04dfd056509ee298aab7/transformed/fragment-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ed688b18b1cb532fb7bbe266b18b5044/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/matthew.cheung/.gradle/caches/transforms-3/875ee0e41154b155d746090093f34c2c/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:2:1-5:12
+MERGED from [com.android.volley:volley:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/06b24183a7c9b5b193bedfd0f0ad5d70/transformed/volley-1.2.1/AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/c18d3f31fc1e80eef83e45cdff94cf5f/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/19458c57d9ea78b739e6dabeed074e6d/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d934f9b1959925eba5036e1931c7f1be/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/5b710f79c5a3da28cf8eed27c5d4ccbd/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc51262ae175a12d7e8de8e6e13ad71b/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/2692e1108bc420b898da2e88ef13231b/transformed/firebase-components-18.0.0/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/93ec5bed7959e465b79daa12e70b1617/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/c89b95f072ad5c232334c5c13652fcd8/transformed/gifdecoder-4.12.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/0e81c2e357dc48200bcdd449ff65f700/transformed/exifinterface-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/84c161c4cd6c905ced62d0cffcd444eb/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/0b85cd2bac032613f43f1c6f7df02050/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/072833156b371336607f52587adfeacf/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/666afbcb20b27cecc641fa636f661c84/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/5d4f40428271659d6b34c8781bb70fa2/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/99d8eb8f86634a29e29c1a83fe4e5866/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b076b0b17f7ecf169aceadcec8286c49/transformed/googleid-1.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/matthew.cheung/.gradle/caches/transforms-3/0dd4b5eed7457bfdcbf36efacf674212/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc08f569a7674b31f85e667a81e04733/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/matthew.cheung/.gradle/caches/transforms-3/c7a8765a50937521843a0dd9426939c2/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:5:5-7:36
+	android:required
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:7:9-33
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:6:9-47
+uses-permission#android.permission.CAMERA
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:11:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:12:5-67
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:12:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:13:22-76
+application
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:15:5-58:19
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:15:5-58:19
+MERGED from [com.google.android.material:material:1.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/dfdf54c554ba1095810b68ee6367d39e/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/dfdf54c554ba1095810b68ee6367d39e/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/matthew.cheung/.gradle/caches/transforms-3/dd2f12abdfaf76290062ae918da4e7cf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/matthew.cheung/.gradle/caches/transforms-3/dd2f12abdfaf76290062ae918da4e7cf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a573c805a7d6b8b9beb1eae67592aed2/transformed/glide-4.12.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a573c805a7d6b8b9beb1eae67592aed2/transformed/glide-4.12.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:21:5-32:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:21:5-32:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6aab38b12ad7d3f26de3513577144a8d/transformed/firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6aab38b12ad7d3f26de3513577144a8d/transformed/firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/37fdf126a13e5407cd1e6d9ddf4e964f/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/37fdf126a13e5407cd1e6d9ddf4e964f/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cbfa6dcb6fd27ab5b7eab0e2a47b7dde/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cbfa6dcb6fd27ab5b7eab0e2a47b7dde/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/8205fed4b1829a18f4e58b9b6c5c34fa/transformed/integrity-1.2.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/8205fed4b1829a18f4e58b9b6c5c34fa/transformed/integrity-1.2.0/AndroidManifest.xml:5:5-6:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ae0834493d8547176115ad961b52ba67/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ae0834493d8547176115ad961b52ba67/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/c18d3f31fc1e80eef83e45cdff94cf5f/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/c18d3f31fc1e80eef83e45cdff94cf5f/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/19458c57d9ea78b739e6dabeed074e6d/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/19458c57d9ea78b739e6dabeed074e6d/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/c89b95f072ad5c232334c5c13652fcd8/transformed/gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/c89b95f072ad5c232334c5c13652fcd8/transformed/gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/0b85cd2bac032613f43f1c6f7df02050/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/0b85cd2bac032613f43f1c6f7df02050/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc08f569a7674b31f85e667a81e04733/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc08f569a7674b31f85e667a81e04733/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/matthew.cheung/.gradle/caches/transforms-3/c7a8765a50937521843a0dd9426939c2/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/matthew.cheung/.gradle/caches/transforms-3/c7a8765a50937521843a0dd9426939c2/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+	android:extractNativeLibs
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:22:9-35
+	android:label
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:20:9-41
+	android:fullBackupContent
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:18:9-54
+	android:roundIcon
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:21:9-54
+	tools:targetApi
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:24:9-29
+	android:icon
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:16:9-35
+	android:theme
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:23:9-53
+	android:dataExtractionRules
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:17:9-65
+activity#com.example.whatflower.ui.chats.ChatsActivity
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:26:13-51
+activity#com.example.whatflower.ui.chats.AddFriendListActivity
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:29:13-59
+activity#com.example.whatflower.ui.chats.AddFriendActivity
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:31:9-33:40
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:32:13-55
+activity#com.example.whatflower.ui.login.ui.login.LoginActivity
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:35:13-60
+activity#com.example.whatflower.ui.view.WebActivity
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:37:9-39:40
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:38:13-48
+activity#com.example.whatflower.MainActivity
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:40:9-48:20
+	android:exported
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:42:13-36
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:41:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:43:13-47:29
+action#android.intent.action.MAIN
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:44:17-69
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:44:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:46:17-77
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:46:27-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:54:13-56:58
+	android:resource
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:56:17-55
+	android:name
+		ADDED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml:55:17-67
+uses-sdk
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.3.2] /Users/matthew.cheung/.gradle/caches/transforms-3/ae66f977320593e008fb92ca920be811/transformed/viewbinding-8.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.3.2] /Users/matthew.cheung/.gradle/caches/transforms-3/ae66f977320593e008fb92ca920be811/transformed/viewbinding-8.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/8ed837592f0bd454a17de29985b85f2c/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/8ed837592f0bd454a17de29985b85f2c/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/e91d011ec028bc62165b2777d17297c1/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/e91d011ec028bc62165b2777d17297c1/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/335af6e7b6c91759c15310b5a79bed4e/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/335af6e7b6c91759c15310b5a79bed4e/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/8c3ccea1288715a40b2f501ca805c0d5/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /Users/matthew.cheung/.gradle/caches/transforms-3/8c3ccea1288715a40b2f501ca805c0d5/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/dfdf54c554ba1095810b68ee6367d39e/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/dfdf54c554ba1095810b68ee6367d39e/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/matthew.cheung/.gradle/caches/transforms-3/dd2f12abdfaf76290062ae918da4e7cf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/matthew.cheung/.gradle/caches/transforms-3/dd2f12abdfaf76290062ae918da4e7cf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6c39fa3e4e1b020097118f667f6ba9f3/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6c39fa3e4e1b020097118f667f6ba9f3/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d7b86e497e67a593e29373aad0b1ec9c/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d7b86e497e67a593e29373aad0b1ec9c/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:21:5-23:151
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a573c805a7d6b8b9beb1eae67592aed2/transformed/glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a573c805a7d6b8b9beb1eae67592aed2/transformed/glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc2c44617c906c0c045e8990f2f0ecfa/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc2c44617c906c0c045e8990f2f0ecfa/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6aab38b12ad7d3f26de3513577144a8d/transformed/firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6aab38b12ad7d3f26de3513577144a8d/transformed/firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/matthew.cheung/.gradle/caches/transforms-3/bd42bbb38bfc07cc8686b65d7602958e/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/matthew.cheung/.gradle/caches/transforms-3/bd42bbb38bfc07cc8686b65d7602958e/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/a8f5e19cd012cf531af2574183f88890/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/a8f5e19cd012cf531af2574183f88890/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/matthew.cheung/.gradle/caches/transforms-3/6550c6cf2e30d63a3f7106cd19999fcf/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/matthew.cheung/.gradle/caches/transforms-3/6550c6cf2e30d63a3f7106cd19999fcf/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/37fdf126a13e5407cd1e6d9ddf4e964f/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/37fdf126a13e5407cd1e6d9ddf4e964f/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/matthew.cheung/.gradle/caches/transforms-3/52f93041456147d5e6e2e095d6de0eb3/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/matthew.cheung/.gradle/caches/transforms-3/52f93041456147d5e6e2e095d6de0eb3/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cbfa6dcb6fd27ab5b7eab0e2a47b7dde/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cbfa6dcb6fd27ab5b7eab0e2a47b7dde/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/8205fed4b1829a18f4e58b9b6c5c34fa/transformed/integrity-1.2.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/8205fed4b1829a18f4e58b9b6c5c34fa/transformed/integrity-1.2.0/AndroidManifest.xml:4:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/32ea303a5b35d23c914751a891a74e6d/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/32ea303a5b35d23c914751a891a74e6d/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/matthew.cheung/.gradle/caches/transforms-3/4428a528086fa865aff0c852f6483c0e/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/matthew.cheung/.gradle/caches/transforms-3/4428a528086fa865aff0c852f6483c0e/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/5f93f3b4f4945f8407a3ffe0ec310d15/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/5f93f3b4f4945f8407a3ffe0ec310d15/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/1d5e2e571032fd24afb24ea3d5ad6500/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/1d5e2e571032fd24afb24ea3d5ad6500/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc55965311ccc157e887281d9709d2d7/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc55965311ccc157e887281d9709d2d7/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/bcf4054464675116e9cb604c206fc832/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/bcf4054464675116e9cb604c206fc832/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1b54cd679b72a671d43b83446c406b92/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1b54cd679b72a671d43b83446c406b92/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/99e1f9af46c976ab62e01418acaebae8/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/99e1f9af46c976ab62e01418acaebae8/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/bd9a2f4df600532265bee19386f7deb6/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/bd9a2f4df600532265bee19386f7deb6/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/2c0adcd9dfbe5ff8d84633b02abb9853/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/2c0adcd9dfbe5ff8d84633b02abb9853/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/219f77e4a6596c55c89499e3f0995ab2/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/219f77e4a6596c55c89499e3f0995ab2/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1208c897e17bebefacd2598b9155495f/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1208c897e17bebefacd2598b9155495f/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/22b6c91186947f2d3579a6b00a7acf4b/transformed/lifecycle-livedata-core-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/22b6c91186947f2d3579a6b00a7acf4b/transformed/lifecycle-livedata-core-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/d73dc6a09a2c25ea15f9a07b6e8462e5/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/d73dc6a09a2c25ea15f9a07b6e8462e5/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/f2c7660dfd07eff00bbcfbe00066ce04/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/f2c7660dfd07eff00bbcfbe00066ce04/transformed/lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/a8d0a7f1f88ce611a826b1ac3cf4b9f7/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/a8d0a7f1f88ce611a826b1ac3cf4b9f7/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/77fd84045c4bc89d113a49b8a55448b3/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/77fd84045c4bc89d113a49b8a55448b3/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc189846f8eaa10d1a2ad0ac9c62d178/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc189846f8eaa10d1a2ad0ac9c62d178/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d451a0475c7e6f9394354c48af74e848/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d451a0475c7e6f9394354c48af74e848/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/98c3a6cde131eded16f7ad51a3d71482/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/98c3a6cde131eded16f7ad51a3d71482/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/272bd09b4ef0b98782c882ce44219c40/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/272bd09b4ef0b98782c882ce44219c40/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/fec45dcd17b954b13d35cd445a6f1aa0/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/fec45dcd17b954b13d35cd445a6f1aa0/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/87d1db8e654d462596a09a0dc9ff4a98/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/87d1db8e654d462596a09a0dc9ff4a98/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/345695125ddeb6a1c420a25d4c3fd9ab/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/345695125ddeb6a1c420a25d4c3fd9ab/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7189234d96c196e917ec10e2fbc4c2a5/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7189234d96c196e917ec10e2fbc4c2a5/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/7af139d4a8443cc0ff824bce7b13d7d9/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/7af139d4a8443cc0ff824bce7b13d7d9/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/a7e7697ca03634e5c1fef37cdd2da0c6/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/a7e7697ca03634e5c1fef37cdd2da0c6/transformed/lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ae0834493d8547176115ad961b52ba67/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ae0834493d8547176115ad961b52ba67/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/104c7a80290f04dfd056509ee298aab7/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/104c7a80290f04dfd056509ee298aab7/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ed688b18b1cb532fb7bbe266b18b5044/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/matthew.cheung/.gradle/caches/transforms-3/ed688b18b1cb532fb7bbe266b18b5044/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/matthew.cheung/.gradle/caches/transforms-3/875ee0e41154b155d746090093f34c2c/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/matthew.cheung/.gradle/caches/transforms-3/875ee0e41154b155d746090093f34c2c/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [com.android.volley:volley:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/06b24183a7c9b5b193bedfd0f0ad5d70/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] /Users/matthew.cheung/.gradle/caches/transforms-3/06b24183a7c9b5b193bedfd0f0ad5d70/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/c18d3f31fc1e80eef83e45cdff94cf5f/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/c18d3f31fc1e80eef83e45cdff94cf5f/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/19458c57d9ea78b739e6dabeed074e6d/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/19458c57d9ea78b739e6dabeed074e6d/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d934f9b1959925eba5036e1931c7f1be/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/d934f9b1959925eba5036e1931c7f1be/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/5b710f79c5a3da28cf8eed27c5d4ccbd/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/5b710f79c5a3da28cf8eed27c5d4ccbd/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc51262ae175a12d7e8de8e6e13ad71b/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/cc51262ae175a12d7e8de8e6e13ad71b/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/2692e1108bc420b898da2e88ef13231b/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/2692e1108bc420b898da2e88ef13231b/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/93ec5bed7959e465b79daa12e70b1617/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/93ec5bed7959e465b79daa12e70b1617/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/c89b95f072ad5c232334c5c13652fcd8/transformed/gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/matthew.cheung/.gradle/caches/transforms-3/c89b95f072ad5c232334c5c13652fcd8/transformed/gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/0e81c2e357dc48200bcdd449ff65f700/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/0e81c2e357dc48200bcdd449ff65f700/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/84c161c4cd6c905ced62d0cffcd444eb/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/84c161c4cd6c905ced62d0cffcd444eb/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/0b85cd2bac032613f43f1c6f7df02050/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/0b85cd2bac032613f43f1c6f7df02050/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/072833156b371336607f52587adfeacf/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/matthew.cheung/.gradle/caches/transforms-3/072833156b371336607f52587adfeacf/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/666afbcb20b27cecc641fa636f661c84/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/666afbcb20b27cecc641fa636f661c84/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/5d4f40428271659d6b34c8781bb70fa2/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/5d4f40428271659d6b34c8781bb70fa2/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/99d8eb8f86634a29e29c1a83fe4e5866/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/99d8eb8f86634a29e29c1a83fe4e5866/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b076b0b17f7ecf169aceadcec8286c49/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b076b0b17f7ecf169aceadcec8286c49/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/matthew.cheung/.gradle/caches/transforms-3/0dd4b5eed7457bfdcbf36efacf674212/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/matthew.cheung/.gradle/caches/transforms-3/0dd4b5eed7457bfdcbf36efacf674212/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc08f569a7674b31f85e667a81e04733/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/matthew.cheung/.gradle/caches/transforms-3/fc08f569a7674b31f85e667a81e04733/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/matthew.cheung/.gradle/caches/transforms-3/c7a8765a50937521843a0dd9426939c2/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/matthew.cheung/.gradle/caches/transforms-3/c7a8765a50937521843a0dd9426939c2/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:23:9-148
+	android:targetSdkVersion
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/matthew.cheung/Desktop/Bsc Computing/mobile app development/WhatFlower/app/src/main/AndroidManifest.xml
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:53:13-63:29
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:22:9-31:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:22:9-31:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:68:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:67:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b9cd6114c383d2c741d8a2a39e32f901/transformed/firebase-auth-23.0.0/AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:29:13-31:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:31:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:30:17-120
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/127c1ecbbe5da33acb14746f2720f9ff/transformed/firebase-database-21.0.0/AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:31:17-118
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/96a62e96fc239238f8384db75fea643b/transformed/firebase-storage-21.0.0/AndroidManifest.xml:34:17-107
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:25:13-27:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:26:17-120
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/49c69909b80863484aa93d11cd23192c/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml:29:17-117
+service#androidx.credentials.playservices.CredentialProviderMetadataHolder
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:28:13-60
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+	android:value
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+activity#androidx.credentials.playservices.HiddenActivity
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+	android:fitsSystemWindows
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/matthew.cheung/.gradle/caches/transforms-3/affb1febf9e96fb4429b70f2f497fbcf/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/matthew.cheung/.gradle/caches/transforms-3/1eb1a0d5280661d0628d0e86b9a02c90/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthew.cheung/.gradle/caches/transforms-3/6a3c135793d40f20c815d6281c220162/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/e04ec1eb0008813ba890bbcb5b6e22b3/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/7f252bbb52b675e274294312e3ced16e/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/matthew.cheung/.gradle/caches/transforms-3/843b9b39dd1bf5d2ab7ee0b486b04a38/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthew.cheung/.gradle/caches/transforms-3/6376e7fcf830b2fbd02b01b7ed831b19/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/67f6259dce27f217eec0308f3a83fb8e/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/matthew.cheung/.gradle/caches/transforms-3/1074e5524ff30d76cec8dc6d65979b6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /Users/matthew.cheung/.gradle/caches/transforms-3/310057b5ae6da3055293e2c3fbd3b9e9/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+permission#com.example.whatflower.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+uses-permission#com.example.whatflower.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/matthew.cheung/.gradle/caches/transforms-3/b2513c4ce7adff540b9b0c56cbec23eb/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/matthew.cheung/.gradle/caches/transforms-3/a7b20825f357452770b57d2d92fc5c78/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/matthew.cheung/.gradle/caches/transforms-3/d936b4ad0de54b80db270735e134287e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

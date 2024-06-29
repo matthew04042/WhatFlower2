@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/fragment_user.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/fragment_user.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/item_chat_message.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_chat_message.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/activity_login.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/fragment_picture.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/fragment_picture.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/activity_chats.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_chats.xml"
+    },
+    {
+        "merged": "com.example.whatflower.app-mergeDebugResources-51:/layout/activity_add_friend.xml",
+        "source": "com.example.whatflower.app-main-54:/layout/activity_add_friend.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/dialog_home_result.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/dialog_home_result.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/fragment_chats.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/fragment_chats.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/item_add_friend.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_add_friend.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/activity_web.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_web.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/dialog_add_friend.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/dialog_add_friend.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/item_picture.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_picture.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/activity_add_friend.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_add_friend.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/activity_add_friend_list.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_add_friend_list.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/dialog_friend_info.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/dialog_friend_info.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/fragment_home.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/dialog_logout.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/dialog_logout.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/activity_main.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/item_conversation.xml",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_conversation.xml"
+    }
+]

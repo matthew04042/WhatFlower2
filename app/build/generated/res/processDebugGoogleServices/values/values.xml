@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://whatflower2-4ee2e-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">436216128810</string>
+    <string name="google_api_key" translatable="false">AIzaSyCp4bQw_caUEM0MsW5X0rjlKaLiPz2FbP0</string>
+    <string name="google_app_id" translatable="false">1:436216128810:android:e1d3e8b890e1de0a6cea53</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCp4bQw_caUEM0MsW5X0rjlKaLiPz2FbP0</string>
+    <string name="google_storage_bucket" translatable="false">whatflower2-4ee2e.appspot.com</string>
+    <string name="project_id" translatable="false">whatflower2-4ee2e</string>
+</resources>

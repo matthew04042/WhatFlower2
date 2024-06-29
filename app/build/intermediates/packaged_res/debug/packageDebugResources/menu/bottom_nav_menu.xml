@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_xj"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_picture"
+        android:icon="@drawable/ic_list"
+        android:title="@string/title_dashboard" />
+    <item
+        android:id="@+id/navigation_chats"
+        android:icon="@drawable/ic_pinglun"
+        android:title="@string/title_chats" />
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_user"
+        android:title="@string/title_me" />
+</menu>
