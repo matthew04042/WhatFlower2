@@ -31,6 +31,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import org.json.JSONArray;
+
 public class AddFriendActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
@@ -41,6 +43,7 @@ public class AddFriendActivity extends AppCompatActivity {
     private RelativeLayout rlResult;
     private CharAvatarView charAvatarView;
     private AppData appData;
+    public JSONArray jsonArray1 = new JSONArray();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -141,11 +144,12 @@ public class AddFriendActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 boolean isApply = false;
                 Object o = snapshot.getValue();
-                Gson gson = new Gson();
-                String jsonString = gson.toJson(o);
-                JsonElement jsonElement = JsonParser.parseString(jsonString);
-                JsonArray jsonArray = jsonElement.getAsJsonArray();
-                if (jsonArray != null){
+                JsonArray jsonArray = new JsonArray();
+                if (o != null){
+                    Gson gson = new Gson();
+                    String jsonString = gson.toJson(o);
+                    JsonElement jsonElement = JsonParser.parseString(jsonString);
+                    jsonArray = jsonElement.getAsJsonArray();
                     Log.i("sendAddFriendApply", jsonArray.toString());
                     for (int i= 0; i < jsonArray.size(); i++){
                         JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
@@ -155,20 +159,20 @@ public class AddFriendActivity extends AppCompatActivity {
                     }
                 }else {
                     Log.i("sendAddFriendApply", "null" );
-                    jsonArray = new JsonArray();
+//                    jsonArray = new JsonArray();
                 }
 
 
                 if (isApply){
-                    Toast.makeText(getApplicationContext(), "Add friend quest", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Friends already requested", Toast.LENGTH_SHORT).show();
                 }else {
                     JsonObject jsonObject1 = new JsonObject();
                     jsonObject1.addProperty("friendName", tvUserName.getText().toString());
                     jsonObject1.addProperty("friendAccount", friend);
                     jsonObject1.addProperty("inputText", inputText);
                     jsonObject1.addProperty("status", 0);
-                    jsonArray.add(jsonObject1);
-                    mFriendDatabase.child(user).setValue(jsonArray);
+                    jsonArray1.put(jsonObject1);
+                    mFriendDatabase.child(user).setValue(jsonArray1);
                     Toast.makeText(getApplicationContext(), " Request sent", Toast.LENGTH_SHORT).show();
                 }
             }
