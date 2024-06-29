@@ -20,7 +20,7 @@
 19 camellia
 20 canna lily
 21 canterbury bells
-22 cape flower
+22 nerine bowdenii
 23 carnation
 24 cautleya spicata
 25 clematis
@@ -95,7 +95,7 @@
 94 tree poppy
 95 trumpet creeper
 96 wallflower
-97 water lily
+97 nymphaeaceae
 98 watercress
 99 wild pansy
 100 windflower

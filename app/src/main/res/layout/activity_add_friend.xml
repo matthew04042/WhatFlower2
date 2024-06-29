@@ -44,7 +44,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="40dp"
             android:paddingStart="8dp"
-            android:hint="Serach for friends by account number"
+            android:hint="Serach for friends by username"
             android:paddingEnd="8dp"
             android:textCursorDrawable="@null"/>
         <ImageView

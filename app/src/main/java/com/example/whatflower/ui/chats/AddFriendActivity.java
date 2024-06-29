@@ -27,6 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -48,12 +49,11 @@ public class AddFriendActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_friend);
         mDatabase = FirebaseDatabase.getInstance().getReference(DatabaseConfig.USERS);
         mFriendDatabase = FirebaseDatabase.getInstance().getReference(DatabaseConfig.ADD_FRIENDS);
-
+        appData = AppData.getInstance();
         tvUserName = findViewById(R.id.tv_add_username);
         charAvatarView = findViewById(R.id.ca_add_user);
         tvAccount = findViewById(R.id.tv_add_account);
         searchEditText = findViewById(R.id.et_search);
-        searchEditText.setText("13200001001");
         findViewById(R.id.iv_search).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,7 +97,7 @@ public class AddFriendActivity extends AppCompatActivity {
     }
 
     private void showAddFriendDialog() {
-
+        System.out.println(appData.getUserBean().getAccount());
         LayoutInflater inflater = getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_add_friend, null);
 
@@ -126,8 +126,7 @@ public class AddFriendActivity extends AppCompatActivity {
 
                 dialogTitle.setText("Input Text: " + inputText);
 
-
-                sendAddFriendApply(appData.getUserBean().getUsername(),tvUserName.getText().toString(), inputText);
+                sendAddFriendApply(appData.getUserBean().getAccount(), tvAccount.getText().toString(), inputText);
 
                 alertDialog.dismiss();
             }
@@ -141,10 +140,11 @@ public class AddFriendActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 boolean isApply = false;
-                Object o = snapshot.getValue();
+                Object o = snapshot.getKey();
                 Gson gson = new Gson();
                 String jsonString = gson.toJson(o);
-                JsonArray jsonArray = JsonParser.parseString(jsonString).getAsJsonArray();
+                JsonElement jsonElement = JsonParser.parseString(jsonString);
+                JsonArray jsonArray = jsonElement.getAsJsonArray();
                 if (jsonArray != null){
                     Log.i("sendAddFriendApply", jsonArray.toString());
                     for (int i= 0; i < jsonArray.size(); i++){

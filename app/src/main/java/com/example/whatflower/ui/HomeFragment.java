@@ -29,6 +29,7 @@ import com.example.whatflower.config.DatabaseConfig;
 import com.example.whatflower.config.ToastUtils;
 import com.example.whatflower.ml.Model;
 import com.example.whatflower.ui.picture.PictureBean;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -65,6 +66,7 @@ public class HomeFragment extends Fragment {
 
     private String labels[] = new String[1001];
     private String imagePath;
+    private FirebaseAuth mAuth;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -101,12 +103,13 @@ public class HomeFragment extends Fragment {
         }catch (IOException e){
             throw new RuntimeException(e);
         }
+        mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference(DatabaseConfig.ADD_FRIENDS);
         appData = AppData.getInstance();
         captureButton = view.findViewById(R.id.iv_home_camera);
         uploadButton = view.findViewById(R.id.iv_home_gallery);
 
-        captureButton.setOnClickListener(v ->{
+        captureButton.setOnClickListener((View v) ->{
             File imgDir = getActivity().getExternalFilesDir(Environment.DIRECTORY_PICTURES);
             String photoName  = System.currentTimeMillis() + ".jpg";
             File picture = new File(imgDir, photoName);
@@ -130,7 +133,7 @@ public class HomeFragment extends Fragment {
         });
     }
 
-    private void showResultDialog(Uri selectedImage){
+    private void showResultDialog(Uri selectedImage, int requestCode){
         LayoutInflater inflater = getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_home_result, null);
 
@@ -160,7 +163,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 if (appData.getLogin()){
                     System.out.println("User is logged in");
-                    uploadImage(selectedImage);
+                    uploadImage(selectedImage, requestCode);
                 }
                 alertDialog.dismiss();
             }
@@ -169,7 +172,8 @@ public class HomeFragment extends Fragment {
             alertDialog.dismiss();
         });
     }
-    public  void uploadImage(Uri fileUri){
+    public  void uploadImage(Uri fileUri, int requestCode){
+        Log.i("TAG", "uploadImage: " + requestCode);
         float similarity = 0;
         try {
             System.out.println("File Uri: " + fileUri);
@@ -187,16 +191,22 @@ public class HomeFragment extends Fragment {
                 System.out.println("Output: " + df.format(output[i]));
             }
             float max = getMax(outputFeature0.getFloatArray());
-            if(100 - max > 0){
-                similarity = 100 - max;
+            float sim = output[getMax(outputFeature0.getFloatArray())];
+            if(sim-100 > 0){
+                similarity = sim-100;
             }else {
-                similarity = max/100;
+                similarity = sim/100;
             }
             String flowerName = labels[(int) max].replaceAll("\\d", "");
             System.out.println("Flower Name: " + flowerName);
             String details = getDetails(flowerName);
             System.out.println("Details: " + details);
-            String imgPath = getPathFromUri(fileUri, getActivity());
+            String imgPath = imagePath;
+            if(requestCode == REQUEST_IMAGE_CAPTURE){
+                imgPath = imagePath;
+            }else if(requestCode == REQUEST_IMAGE_PICK) {
+                imgPath = getPathFromUri(fileUri, getActivity());
+            }
             Uri file = Uri.fromFile(new File(imgPath));
             FirebaseStorage storage = FirebaseStorage.getInstance();
             StorageReference storageRef = storage.getReference();
@@ -290,11 +300,11 @@ public class HomeFragment extends Fragment {
        if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == getActivity().RESULT_OK){
         Log.i("TAG", "onActivityResult: " + imagePath);
         Log.i("TAG", "onActivityResult: " + photoUri);
-        showResultDialog(photoUri);
+        showResultDialog(photoUri, requestCode);
        } else if (requestCode == REQUEST_IMAGE_PICK && data != null) {
            Log.i("TAG", "imgPath REQUEST_IMAGE_PICK");
            Uri selectedImage = data.getData();
-           showResultDialog(selectedImage);
+           showResultDialog(selectedImage, requestCode);
        }
     }
 

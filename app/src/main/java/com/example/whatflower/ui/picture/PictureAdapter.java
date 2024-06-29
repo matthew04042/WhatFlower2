@@ -44,7 +44,7 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.PictureV
                 .into(holder.pictureImage);
         holder.pictureResult.setText("FlowerName："+pictureBean.result);
         holder.pictureScore.setText("Similarity："+pictureBean.similarity+ "%");
-        holder.Detail.setText("Details："+  pictureBean.detail.substring(0, 100) + "...");
+        holder.Detail.setText("Details："+  pictureBean.detail);
     }
 
     @Override
