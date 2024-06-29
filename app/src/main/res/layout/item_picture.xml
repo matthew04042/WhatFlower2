@@ -34,6 +34,7 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_xs"/>
             <TextView
+                android:id="@+id/tv_picture_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -41,5 +42,15 @@
                 android:text=""/>
         </RelativeLayout>
     </RelativeLayout>
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""/>
+    </RelativeLayout>
 </LinearLayout>

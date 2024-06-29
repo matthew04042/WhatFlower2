@@ -1,13 +1,12 @@
 package com.example.whatflower.ui.login.ui.login;
 
+import android.util.Log;
+import android.util.Patterns;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
-import android.util.Log;
-import android.util.Patterns;
-import android.widget.Toast;
 
 import com.example.whatflower.R;
 import com.example.whatflower.bean.UserBean;
@@ -16,13 +15,12 @@ import com.example.whatflower.config.DatabaseConfig;
 import com.example.whatflower.ui.login.data.LoginRepository;
 import com.example.whatflower.ui.login.data.Result;
 import com.example.whatflower.ui.login.data.model.LoggedInUser;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 
 
 public class LoginViewModel extends ViewModel {
@@ -89,9 +87,9 @@ public class LoginViewModel extends ViewModel {
                 if (userBean == null){
                     UserBean user = new UserBean(name,account,password);
                     mDatabase.child(account).setValue(user);
-                    appData.setUserBean(userBean);
+                    appData.setUserBean(user);
                     appData.setLogin(true);
-                    loginResult.setValue(new LoginResult(new LoggedInUserView("登录成功")));
+                    loginResult.setValue(new LoginResult(new LoggedInUserView("Register Success")));
                 }else {
                     loginResult.setValue(new LoginResult(R.string.login_failed));
                 }

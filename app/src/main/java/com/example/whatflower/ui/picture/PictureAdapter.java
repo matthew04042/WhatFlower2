@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.whatflower.R;
 import com.bumptech.glide.Glide;
 
+
 import java.util.List;
 
 public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.PictureViewHolder> {
@@ -41,8 +42,9 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.PictureV
                 .placeholder(R.drawable.ic_bg2)
                 .error(R.drawable.ic_bg2)
                 .into(holder.pictureImage);
-        holder.pictureResult.setText("Result："+pictureBean.result);
-
+        holder.pictureResult.setText("FlowerName："+pictureBean.result);
+        holder.pictureScore.setText("Similarity："+pictureBean.similarity+ "%");
+        holder.Detail.setText("Details："+  pictureBean.detail.substring(0, 100) + "...");
     }
 
     @Override
@@ -54,11 +56,14 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.PictureV
 
         ImageView pictureImage;
         TextView pictureResult;
-
+        TextView pictureScore;
+        TextView Detail;
         PictureViewHolder(View itemView) {
             super(itemView);
             pictureImage = itemView.findViewById(R.id.item_picture_image);
             pictureResult = itemView.findViewById(R.id.tv_picture_result);
+            pictureScore = itemView.findViewById(R.id.tv_picture_score);
+            Detail = itemView.findViewById(R.id.tv_details);
         }
     }
 }

@@ -73,7 +73,7 @@ public class UserFragment extends Fragment {
 
             if (appData.getLogin()){
                 name.setText(appData.getUserBean().getUsername());
-                userAvatar.setText(appData.getUserBean().getUsername().substring(0,1)); // 设置字符
+                userAvatar.setText(appData.getUserBean().getUsername().substring(0,1));
             }else {
                 Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
@@ -136,7 +136,7 @@ public class UserFragment extends Fragment {
         if (appData.getLogin()){
             name.setText(appData.getUserBean().getUsername());
             String a = appData.getUserBean().getUsername().substring(0,1);
-            userAvatar.setText(a); // 设置字符
+            userAvatar.setText(a);
             logout.setVisibility(View.VISIBLE);
         }
     }
