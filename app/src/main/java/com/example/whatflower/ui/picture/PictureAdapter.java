@@ -1,6 +1,7 @@
 package com.example.whatflower.ui.picture;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,13 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.PictureV
         holder.pictureResult.setText("FlowerName："+pictureBean.result);
         holder.pictureScore.setText("Similarity："+pictureBean.similarity+ "%");
         holder.Detail.setText("Details："+  pictureBean.detail);
+        if(pictureBean.detail != null){
+            holder.Detail.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+            holder.Detail.setSingleLine(true);
+            holder.Detail.setMarqueeRepeatLimit(-1);
+            holder.Detail.setSelected(true);
+
+        }
     }
 
     @Override

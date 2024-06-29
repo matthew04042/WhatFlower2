@@ -72,16 +72,20 @@
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_add_user.xml"
     },
     {
+        "merged": "com.example.whatflower.app-debug-52:/layout_item_picture.xml.flat",
+        "source": "com.example.whatflower.app-main-54:/layout/item_picture.xml"
+    },
+    {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/layout_activity_web.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_web.xml"
     },
     {
-        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/drawable_ic_bg1.xml.flat",
-        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_bg1.xml"
-    },
-    {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/layout_item_picture.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_picture.xml"
+    },
+    {
+        "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/drawable_ic_bg1.xml.flat",
+        "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_bg1.xml"
     },
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/drawable_ic_logout.xml.flat",
@@ -130,10 +134,6 @@
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/drawable_ic_xc.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_xc.xml"
-    },
-    {
-        "merged": "com.example.whatflower.app-debug-52:/layout_activity_add_friend.xml.flat",
-        "source": "com.example.whatflower.app-main-54:/layout/activity_add_friend.xml"
     },
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/layout_dialog_logout.xml.flat",

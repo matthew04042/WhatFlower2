@@ -20,10 +20,6 @@
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_chats.xml"
     },
     {
-        "merged": "com.example.whatflower.app-mergeDebugResources-51:/layout/activity_add_friend.xml",
-        "source": "com.example.whatflower.app-main-54:/layout/activity_add_friend.xml"
-    },
-    {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/dialog_home_result.xml",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/dialog_home_result.xml"
     },
@@ -74,5 +70,9 @@
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-mergeDebugResources-51:/layout/item_conversation.xml",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_conversation.xml"
+    },
+    {
+        "merged": "com.example.whatflower.app-mergeDebugResources-51:/layout/item_picture.xml",
+        "source": "com.example.whatflower.app-main-54:/layout/item_picture.xml"
     }
 ]
