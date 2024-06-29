@@ -31,8 +31,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import org.json.JSONArray;
-
 public class AddFriendActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
@@ -43,7 +41,7 @@ public class AddFriendActivity extends AppCompatActivity {
     private RelativeLayout rlResult;
     private CharAvatarView charAvatarView;
     private AppData appData;
-    public JSONArray jsonArray1 = new JSONArray();
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -171,8 +169,8 @@ public class AddFriendActivity extends AppCompatActivity {
                     jsonObject1.addProperty("friendAccount", friend);
                     jsonObject1.addProperty("inputText", inputText);
                     jsonObject1.addProperty("status", 0);
-                    jsonArray1.put(jsonObject1);
-                    mFriendDatabase.child(user).setValue(jsonArray1);
+                    jsonArray.add(jsonObject1);
+                    mFriendDatabase.child(user).setValue(jsonArray.asList());
                     Toast.makeText(getApplicationContext(), " Request sent", Toast.LENGTH_SHORT).show();
                 }
             }
