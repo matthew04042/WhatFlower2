@@ -140,7 +140,7 @@ public class AddFriendActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 boolean isApply = false;
-                Object o = snapshot.getKey();
+                Object o = snapshot.getValue();
                 Gson gson = new Gson();
                 String jsonString = gson.toJson(o);
                 JsonElement jsonElement = JsonParser.parseString(jsonString);
