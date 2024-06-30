@@ -3097,6 +3097,7 @@ int drawable design_ic_visibility_off 0x7f070097
 int drawable design_password_eye 0x7f070098
 int drawable design_snackbar_background 0x7f070099
 int drawable edit_chat_background 0x7f07009a
+int drawable flower 0x7f07013d
 int drawable googleg_disabled_color_18 0x7f07009b
 int drawable googleg_standard_color_18 0x7f07009c
 int drawable ic_a 0x7f07009d
