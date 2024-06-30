@@ -48,6 +48,10 @@
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/dialog_add_friend.xml"
     },
     {
+        "merged": "com.example.whatflower.app-debug-52:/layout_fragment_chats.xml.flat",
+        "source": "com.example.whatflower.app-main-54:/layout/fragment_chats.xml"
+    },
+    {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/drawable_ic_back.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_back.xml"
     },
@@ -72,10 +76,6 @@
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_add_user.xml"
     },
     {
-        "merged": "com.example.whatflower.app-debug-52:/layout_item_picture.xml.flat",
-        "source": "com.example.whatflower.app-main-54:/layout/item_picture.xml"
-    },
-    {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/layout_activity_web.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/activity_web.xml"
     },
@@ -94,6 +94,10 @@
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/layout_item_add_friend.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/layout/item_add_friend.xml"
+    },
+    {
+        "merged": "com.example.whatflower.app-debug-52:/layout_fragment_user.xml.flat",
+        "source": "com.example.whatflower.app-main-54:/layout/fragment_user.xml"
     },
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/mipmap-hdpi_ic_launcher.webp.flat",
@@ -226,6 +230,14 @@
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-main-54:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.whatflower.app-debug-52:/layout_fragment_home.xml.flat",
+        "source": "com.example.whatflower.app-main-54:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.whatflower.app-debug-52:/layout_fragment_picture.xml.flat",
+        "source": "com.example.whatflower.app-main-54:/layout/fragment_picture.xml"
     },
     {
         "merged": "/Users/matthew.cheung/.gradle/daemon/8.4/com.example.whatflower.app-debug-52:/xml_backup_rules.xml.flat",
